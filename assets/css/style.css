@@ -101,7 +101,8 @@ section {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 20px;
-    padding: 12px 20px 12px 20px;
+    width: 154px;
+    height: 48px;
     cursor: pointer;
     padding-left: 20px;
 }
@@ -202,13 +203,14 @@ section {
     position: relative;
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
-.margin-auto{
+.margin-auto {
     margin: auto;
 }
+
 .end {
     font-family: Helvetica;
     font-size: 38px;
@@ -218,6 +220,7 @@ section {
     color: #003459;
     max-width: 548px;
     position: absolute;
+    padding-top: 70px;
 }
 
 .end span {
@@ -245,6 +248,10 @@ section {
 
 .pt-60 {
     padding-top: 60px;
+}
+
+.flex-direction-row {
+    flex-direction: row;
 }
 
 @media (max-width:991.98px) {
@@ -345,7 +352,7 @@ section {
     }
 
     .end {
-        color: #ffffff;
+        /* color: #ffffff; */
         padding-top: 70px;
         text-align: center;
     }
