@@ -1,0 +1,379 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(../font/helvetica-255/Helvetica.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+section {
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-item {
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
+.pt-109 {
+    padding-top: 109px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.bg-img {
+    background-image: url(../images/header-bg-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.4px;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: 90%;
+}
+
+.btn {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.4px;
+    color: #00171F;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    padding: 12px 20px 12px 20px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.btn:hover {
+    border-radius: 0px;
+    transition: all 500ms linear;
+}
+
+.flex-grow {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.heading {
+    font-family: Helvetica;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 70.4px;
+    text-align: left;
+    color: white;
+    max-width: 1065px;
+    width: 100%;
+}
+
+.heading span {
+    font-family: Helvetica;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: left;
+}
+
+.para {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: white;
+    max-width: 1020px;
+    width: 100%;
+    opacity: 90%;
+    padding-top: 16px;
+}
+
+.input {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.6px;
+    text-align: left;
+    color: #00171F;
+    width: 100%;
+    height: 66px;
+    padding: 9px 9px 9px 22px;
+    border-radius: 0px 100px 100px 20px;
+    border: 1px;
+    margin-top: 42px;
+}
+
+.input-btn {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    line-height: 18.4px;
+    background: #00A8E8;
+    position: absolute;
+    right: 14%;
+    top: 46%;
+    border: none;
+    border-radius: 0px 50px 50px 50px;
+    padding: 12px 20px 12px 20px;
+    cursor: pointer;
+}
+
+.input-btn:hover {
+    border-radius: 0px;
+    transition: all 500ms linear;
+}
+
+.dot-img {
+    position: absolute;
+    top: -7%;
+    right: -12%;
+    z-index: 1;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.margin-auto{
+    margin: auto;
+}
+.end {
+    font-family: Helvetica;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 41.8px;
+    text-align: left;
+    color: #003459;
+    max-width: 548px;
+    position: absolute;
+}
+
+.end span {
+    font-family: Helvetica;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 41.8px;
+    text-align: left;
+    color: #00A8E8;
+}
+
+.woman-img {
+    border-radius: 4px;
+    z-index: 2;
+    position: absolute;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+@media (max-width:991.98px) {
+    .link {
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background-color: #09466D;
+        transition: all 200ms linear;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .flex-direction {
+        flex-direction: column;
+    }
+
+    label[for="openslider"] {
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 5;
+    }
+
+    label[for="openslider"] span {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 200ms linear;
+    }
+
+    input:checked~.link {
+        right: 0;
+    }
+
+
+    input:checked~label[for="openslider"] span:first-child {
+        transform: rotate(30deg);
+        transform-origin: left;
+    }
+
+    input:checked~label[for="openslider"] span:last-child {
+        transform: rotate(-30deg);
+        transform-origin: left;
+    }
+
+    input:checked~label[for="openslider"] span:nth-child(2) {
+        transform: translateX(-40px);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+
+@media (min-width:992px) {
+    .col-lg-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .input {
+        max-width: 476px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .heading {
+        font-size: 40px;
+        line-height: unset;
+    }
+
+    .heading span {
+        font-size: 40px;
+        line-height: unset;
+    }
+
+    .woman-img {
+        padding-top: 80px;
+        width: 100%;
+    }
+
+    .end {
+        font-size: 30px;
+        line-height: unset;
+    }
+
+    .woman-img {
+        margin-top: 17%;
+    }
+
+    .end {
+        color: #ffffff;
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    .dot-img {
+        position: absolute;
+        top: 26%;
+        right: -9%;
+
+    }
+}
+
+@media (max-width:1199.98px) {
+    .dot-img {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .input-btn {
+        top: 110%;
+        left: 25%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .woman-img {
+        margin-top: 45%;
+    }
+
+}
