@@ -40,6 +40,24 @@ section {
     padding-right: 12px;
 }
 
+.col-9 {
+    width: 75%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-2 {
+    width: 16.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 .col-12 {
     width: 100%;
     padding-left: 12px;
@@ -79,6 +97,7 @@ section {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom-left-radius: 200px;
 }
 
 .about {
@@ -167,7 +186,8 @@ section {
     padding: 9px 9px 9px 22px;
     border-radius: 0px 100px 100px 20px;
     border: 1px;
-    margin-top: 42px;
+    margin-bottom: 85px;
+    margin-top: 100px;
 }
 
 .input-btn {
@@ -180,7 +200,7 @@ section {
     background: #00A8E8;
     position: absolute;
     right: 14%;
-    top: 46%;
+    top: 43%;
     border: none;
     border-radius: 0px 50px 50px 50px;
     padding: 12px 20px 12px 20px;
@@ -194,9 +214,13 @@ section {
 
 .dot-img {
     position: absolute;
-    top: -7%;
+    top: 19%;
     right: -12%;
     z-index: 1;
+}
+
+.gap-3 {
+    gap: 3px;
 }
 
 .position-relative {
@@ -219,7 +243,7 @@ section {
     text-align: left;
     color: #003459;
     max-width: 548px;
-    position: absolute;
+    /* position: absolute; */
     padding-top: 70px;
 }
 
@@ -235,7 +259,6 @@ section {
 .woman-img {
     border-radius: 4px;
     z-index: 2;
-    position: absolute;
 }
 
 .mb-24 {
@@ -252,6 +275,129 @@ section {
 
 .flex-direction-row {
     flex-direction: row;
+}
+
+.mt-203 {
+    margin-top: 203px;
+}
+
+.mt-162 {
+    margin-top: 162px;
+}
+
+.switching {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: left;
+    max-width: 409px;
+    color: #00171F;
+}
+
+.switching span {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: left;
+}
+
+.say-goodbye {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    opacity: 90%;
+    max-width: 558px;
+    color: #00171F;
+    padding-top: 16px;
+}
+
+.benefits {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: left;
+    color: #003459;
+    padding-top: 38px;
+}
+
+.pt-28 {
+    padding-top: 28px;
+}
+
+.pl-16 {
+    padding-left: 16px;
+}
+
+.pt-8 {
+    padding-top: 8px;
+}
+
+.mb-162 {
+    margin-bottom: 162px;
+}
+
+.save-money {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #00171F;
+    opacity: 90%;
+    list-style-type: disc;
+}
+
+.btn-2 {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: left;
+    padding: 12px 20px 12px 20px;
+    border-radius: 0px 50px 50px 20px;
+    background-color: #00A8E8;
+    color: #FFFFFF;
+    margin-top: 42px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    border-radius: 0px;
+    transition: all 500ms linear;
+}
+.gap-51 {
+    gap: 51px;
+}
+.logo-svg-1,
+.logo-svg-2,
+.logo-svg-3,
+.logo-svg-4,
+.logo-svg-5,
+.logo-svg-6,
+.logo-svg-7 {
+    filter: grayscale(100%);
+}
+
+.logo-svg-1:hover,
+.logo-svg-2:hover,
+.logo-svg-3:hover,
+.logo-svg-4:hover,
+.logo-svg-5:hover,
+.logo-svg-6:hover,
+.logo-svg-7:hover {
+    filter: none;
+}
+
+.logo-svg-item {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
 }
 
 @media (max-width:991.98px) {
@@ -312,6 +458,10 @@ section {
         visibility: hidden;
     }
 
+    .logo-svg-item {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (min-width:992px) {
@@ -324,6 +474,20 @@ section {
     .input {
         max-width: 476px;
     }
+
+    .woman-img {
+        transform: translateY(190px);
+    }
+
+    .end {
+        transform: translateY(0px);
+    }
+
+    .both {
+        transform: translateY(190px);
+    }
+
+    
 }
 
 @media (max-width:991.98px) {
@@ -347,21 +511,21 @@ section {
         line-height: unset;
     }
 
-    .woman-img {
-        margin-top: 17%;
-    }
-
     .end {
-        /* color: #ffffff; */
         padding-top: 70px;
         text-align: center;
+        color: white;
     }
 
     .dot-img {
         position: absolute;
-        top: 26%;
+        top: 6%;
         right: -9%;
 
+    }
+
+    .bg-img {
+        border-bottom-left-radius: 0px;
     }
 }
 
@@ -373,14 +537,9 @@ section {
 
 @media (max-width:576px) {
     .input-btn {
-        top: 110%;
+        top: 70%;
         left: 25%;
         justify-content: center;
         display: flex;
     }
-
-    .woman-img {
-        margin-top: 45%;
-    }
-
 }
