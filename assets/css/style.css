@@ -188,6 +188,8 @@ section {
     border: 1px;
     margin-bottom: 85px;
     margin-top: 100px;
+    color: #7F8A8E;
+    outline: 0;
 }
 
 .input-btn {
@@ -371,9 +373,11 @@ section {
     border-radius: 0px;
     transition: all 500ms linear;
 }
+
 .gap-51 {
     gap: 51px;
 }
+
 .logo-svg-1,
 .logo-svg-2,
 .logo-svg-3,
@@ -396,8 +400,185 @@ section {
 
 .logo-svg-item {
     flex-direction: row;
-    justify-content: space-between;
     display: flex;
+}
+
+
+.simple {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: center;
+    color: #00171F;
+}
+
+.simple span {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: center;
+}
+
+.lorem {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: center;
+    color: #4B4B4B;
+    opacity: 90%;
+    padding-top: 16px;
+    max-width: 610px;
+}
+
+.pt-58 {
+    padding-top: 58px;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    background-color: #EAF8FE;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 94%;
+}
+
+.card:hover::before {
+    background-color: none;
+    opacity: 0%;
+    transition: all 1s linear;
+}
+
+.card:hover .card-up-text-1 {
+    display: none;
+    transform: translateY(-10%);
+}
+
+.card:hover .card-up-text-2 {
+    display: none;
+    transform: translateY(-10%);
+}
+
+.card:hover .card-up-text-3 {
+    display: none;
+    transform: translateY(-10%);
+}
+
+.card:hover .card-up-text-4 {
+    display: none;
+    transform: translateY(-10%);
+}
+
+.card-up-text-1 {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-align: left;
+    position: absolute;
+    white-space: nowrap;
+    rotate: -90deg;
+    bottom: 46.5%;
+}
+
+.card-up-text-2 {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-align: left;
+    position: absolute;
+    white-space: nowrap;
+    rotate: -90deg;
+    bottom: 28.5%;
+}
+
+.card-up-text-3 {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-align: left;
+    position: absolute;
+    white-space: nowrap;
+    rotate: -90deg;
+    bottom: 21.5%;
+}
+
+.card-up-text-4 {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-align: left;
+    position: absolute;
+    white-space: nowrap;
+    rotate: -90deg;
+    bottom: 30.5%;
+}
+
+.card-text {
+    padding: 32px;
+    background-color: #003459;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 1s linear;
+}
+
+.card:hover .card-text {
+    transform: translateY(0%);
+}
+
+.card-heading {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.card-para {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    max-width: 286px;
+    color: #ffffff;
+}
+
+.up-text-position-1 {
+    position: absolute;
+    left: -25%;
+}
+
+.up-text-position-2 {
+    position: absolute;
+    left: 6%;
+}
+
+.up-text-position-3 {
+    position: absolute;
+    left: 20%;
+}
+
+.up-text-position-4 {
+    position: absolute;
+    left: 3%;
 }
 
 @media (max-width:991.98px) {
@@ -464,12 +645,35 @@ section {
 
 }
 
+
+/* @media (min-width:768px) {
+    .col-md-4 {
+        width: 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:576px) {
+    .col-sm-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+} */
+
 @media (min-width:992px) {
     .col-lg-6 {
         width: 50%;
         padding-left: 12px;
         padding-right: 12px;
     }
+
+    /* .col-lg-3 {
+        width: 25%;
+        padding-left: 12px;
+        padding-right: 12px;
+    } */
 
     .input {
         max-width: 476px;
@@ -487,10 +691,22 @@ section {
         transform: translateY(190px);
     }
 
-    
+    .w-507 {
+        width: 507px;
+    }
+
 }
 
 @media (max-width:991.98px) {
+
+    .navbar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        background: #09476e;
+        z-index: 5;
+    }
+
     .heading {
         font-size: 40px;
         line-height: unset;
@@ -541,5 +757,9 @@ section {
         left: 25%;
         justify-content: center;
         display: flex;
+    }
+
+    .mb-162 {
+        margin-bottom: 81px;
     }
 }
