@@ -34,30 +34,6 @@ section {
     margin-right: -12px;
 }
 
-.col-6 {
-    width: 50%;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.col-9 {
-    width: 75%;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.col-2 {
-    width: 16.66%;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.col-3 {
-    width: 25%;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
 .col-12 {
     width: 100%;
     padding-left: 12px;
@@ -185,7 +161,6 @@ section {
     font-weight: 400;
     line-height: 17.6px;
     text-align: left;
-    color: #00171F;
     width: 100%;
     height: 66px;
     padding: 9px 9px 9px 22px;
@@ -250,7 +225,6 @@ section {
     text-align: left;
     color: #003459;
     max-width: 548px;
-    /* position: absolute; */
     padding-top: 70px;
 }
 
@@ -287,6 +261,10 @@ section {
 .mt-162 {
     margin-top: 162px;
 }
+
+/***** header end *****/
+
+/***** section 1 *****/
 
 .switching {
     font-family: Helvetica;
@@ -403,7 +381,9 @@ section {
     flex-direction: row;
     display: flex;
 }
+/***** section 1 end *****/
 
+/***** section 2 *****/
 
 .simple {
     font-family: Helvetica;
@@ -438,12 +418,21 @@ section {
     padding-top: 58px;
 }
 
+
+.row-gap-20 {
+    row-gap: 20px;
+}
+
 .card {
     overflow: hidden;
 }
 
-.row-gap-20 {
-    row-gap: 20px;
+.parent-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .card::before {
@@ -589,6 +578,8 @@ section {
 .pb-58 {
     padding-bottom: 58px;
 }
+
+/***** section 2 end *****/
 
 @media (max-width:991.98px) {
     .link {
@@ -747,7 +738,7 @@ section {
     }
 }
 
-@media (max-width:480px) {
+@media (max-width:479.98px) {
 
     .logo-svg-1,
     .logo-svg-2,
@@ -770,7 +761,7 @@ section {
     }
 }
 
-@media (max-width:576px) {
+@media (max-width:575.98px) {
     .input-btn {
         top: 70%;
         left: 25%;
