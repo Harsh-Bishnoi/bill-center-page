@@ -592,6 +592,84 @@ section {
 
 /***** section 2 end *****/
 
+/***** section 3 *****/
+
+.comprehensive {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: left;
+    max-width: 456px;
+}
+
+.comprehensive span {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: left;
+}
+
+.pt-46 {
+    padding-top: 46px;
+}
+
+details {
+    border: 1px solid #00000014;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.accordion {
+    width: 558px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.arrow-svg {
+    margin-right: 14px;
+}
+
+.accordion-head {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: left;
+    opacity: 90%;
+    color: #00171F;
+    padding-left: 24px;
+}
+
+.accordion-content {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    color: #00171F;
+    opacity: 90%;
+    padding-left: 102px;
+    padding-top: 8px;
+}
+
+.accordion-svg {
+    padding-left: 14px;
+}
+
+details[open] {
+    box-shadow: 0px 0px 13.9px 0px #0000001A;
+}
+
+details[open] .arrow-svg {
+    transform: rotate(180deg);
+}
+
 @media (max-width:991.98px) {
     .link {
         flex-direction: column;
@@ -658,39 +736,6 @@ section {
         padding-top: 30px;
     }
 
-}
-
-@media (min-width:992px) {
-    .col-lg-6 {
-        width: 50%;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .input {
-        max-width: 476px;
-    }
-
-    .woman-img {
-        transform: translateY(190px);
-    }
-
-    .end {
-        transform: translateY(0px);
-    }
-
-    .both {
-        transform: translateY(190px);
-    }
-
-    .w-507 {
-        width: 507px;
-    }
-
-}
-
-@media (max-width:991.98px) {
-
     .navbar {
         position: fixed;
         left: 0;
@@ -739,6 +784,36 @@ section {
     .pt-65 {
         padding-top: 65px;
     }
+
+}
+
+@media (min-width:992px) {
+    .col-lg-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .input {
+        max-width: 476px;
+    }
+
+    .woman-img {
+        transform: translateY(190px);
+    }
+
+    .end {
+        transform: translateY(0px);
+    }
+
+    .both {
+        transform: translateY(190px);
+    }
+
+    .w-507 {
+        width: 507px;
+    }
+
 }
 
 @media (max-width:1199.98px) {
