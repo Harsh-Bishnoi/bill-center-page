@@ -615,6 +615,10 @@ section {
     padding-top: 46px;
 }
 
+.pt-50 {
+    padding-top: 50px;
+}
+
 details {
     border: 1px solid #00000014;
     padding-top: 19px;
@@ -624,7 +628,7 @@ details {
 }
 
 .accordion {
-    width: 558px;
+    max-width: 558px;
 }
 
 .mt-24 {
@@ -814,6 +818,13 @@ details[open] .arrow-svg {
         width: 507px;
     }
 
+    .accordion {
+        width: 558px;
+    }
+
+    .ml-lg-50 {
+        margin-left: 50px;
+    }
 }
 
 @media (max-width:1199.98px) {
@@ -861,5 +872,13 @@ details[open] .arrow-svg {
 
     .mb-162 {
         margin-bottom: 81px;
+    }
+
+    .comprehensive {
+        font-size: 40px;
+    }
+
+    .comprehensive span {
+        font-size: 40px;
     }
 }
