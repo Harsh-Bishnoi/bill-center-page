@@ -674,6 +674,41 @@ details[open] .arrow-svg {
     transform: rotate(180deg);
 }
 
+/* section 4 */
+
+.head {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: left;
+    color: #00171F;
+}
+
+.head span {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: left;
+    color: #00171F;
+}
+
+.emphasizes {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #00171F;
+    opacity: 90%;
+    max-width: 620px;
+}
+
+.pt-16 {
+    padding-top: 16px;
+}
+
 @media (max-width:991.98px) {
     .link {
         flex-direction: column;
