@@ -35,9 +35,26 @@ section {
 }
 
 /* col property */
+.col-12 {
+    width: 16.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
 .col-6 {
     width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-8 {
+    width: 66.66%;
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -611,34 +628,6 @@ section {
     text-align: left;
 }
 
-.pt-46 {
-    padding-top: 46px;
-}
-
-.pt-50 {
-    padding-top: 50px;
-}
-
-details {
-    border: 1px solid #00000014;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.accordion {
-    max-width: 558px;
-}
-
-.mt-24 {
-    margin-top: 24px;
-}
-
-.arrow-svg {
-    margin-right: 14px;
-}
-
 .accordion-head {
     font-family: Helvetica;
     font-size: 24px;
@@ -662,8 +651,59 @@ details {
     padding-top: 8px;
 }
 
-.accordion-svg {
-    padding-left: 14px;
+.pt-46 {
+    padding-top: 46px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+details {
+    border: 1px solid #00000014;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.accordion-circle {
+    width: 64px;
+    height: 64px;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #EAF9FF;
+}
+
+.accordion {
+    max-width: 558px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.arrow-svg {
+    margin-right: 14px;
+}
+
+.accordion-circle {
+    margin-left: 14px;
+}
+
+.fuel-icon {
+    margin-left: 4px;
+    margin-top: 2px;
+}
+
+.internet-icon {
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.box-icon {
+    margin-left: 1px;
+    margin-top: 1px;
 }
 
 details[open] {
@@ -674,7 +714,29 @@ details[open] .arrow-svg {
     transform: rotate(180deg);
 }
 
-/* section 4 */
+details[open] .accordion-circle {
+    background-color: #003459;
+}
+
+details[open] .blub-icon path {
+    fill: white;
+}
+
+details[open] .fuel-icon path {
+    fill: white;
+}
+
+details[open] .internet-icon path {
+    fill: white;
+}
+
+details[open] .box-icon path {
+    fill: white;
+}
+
+
+
+/***** section 4 *****/
 
 .head {
     font-family: Helvetica;
@@ -707,6 +769,89 @@ details[open] .arrow-svg {
 
 .pt-16 {
     padding-top: 16px;
+}
+
+.card-1 {
+    max-width: 424px;
+    border-radius: 4px;
+    background-color: #003459;
+}
+
+.card-2 {
+    max-width: 334px;
+    border-radius: 4px;
+    border: 1px solid #00171F1A;
+    box-shadow: 0px 0px 13.9px 0px #0000001A;
+}
+
+.star-svg {
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.tailored {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: left;
+    color: white;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.our {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    opacity: 90%;
+    color: white;
+    max-width: 344px;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 114px;
+}
+
+.simplified {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: left;
+    color: #010101;
+    max-width: 286px;
+    padding-left: 24px;
+    padding-top: 18px;
+}
+
+.card-2-svg {
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+.paragraph {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    max-width: 333px;
+    opacity: 90%;
+    color: #00171F;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+
+.pb-74 {
+    padding-bottom: 74px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
 }
 
 @media (max-width:991.98px) {
